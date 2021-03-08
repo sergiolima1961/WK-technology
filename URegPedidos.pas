@@ -37,10 +37,6 @@ type
     DBGrid2: TDBGrid;
     dsItem: TDataSource;
     BtFechar: TButton;
-    TSdashBoard: TTabSheet;
-    DBGrid3: TDBGrid;
-    DBChart1: TDBChart;
-    Series1: THorizBarSeries;
     Label7: TLabel;
     DBEdit2: TDBEdit;
     Label8: TLabel;

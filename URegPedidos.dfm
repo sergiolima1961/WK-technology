@@ -48,8 +48,6 @@ object FProspects: TFProspects
         Font.Style = []
         ParentFont = False
         TabOrder = 0
-        ExplicitLeft = 3
-        ExplicitTop = 28
         object Label4: TLabel
           Left = 11
           Top = 50
@@ -357,7 +355,6 @@ object FProspects: TFProspects
         Align = alTop
         Caption = 'Item de Pedidos'
         TabOrder = 2
-        ExplicitTop = 334
       end
       object DBGrid1: TDBGrid
         Left = 0
@@ -394,65 +391,6 @@ object FProspects: TFProspects
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
         OnKeyDown = DBGrid2KeyDown
-      end
-    end
-    object TSdashBoard: TTabSheet
-      Caption = 'DashBoard'
-      ImageIndex = 4
-      object DBGrid3: TDBGrid
-        Left = 0
-        Top = 0
-        Width = 425
-        Height = 473
-        Align = alClient
-        DataSource = dsItem
-        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
-        TabOrder = 0
-        TitleFont.Charset = DEFAULT_CHARSET
-        TitleFont.Color = clWindowText
-        TitleFont.Height = -11
-        TitleFont.Name = 'Tahoma'
-        TitleFont.Style = []
-      end
-      object DBChart1: TDBChart
-        Left = 425
-        Top = 0
-        Width = 400
-        Height = 473
-        Title.Text.Strings = (
-          'UF')
-        Chart3DPercent = 95
-        Legend.Alignment = laTop
-        Legend.TextStyle = ltsPlain
-        View3DOptions.HorizOffset = -14
-        View3DOptions.Zoom = 88
-        Align = alRight
-        TabOrder = 1
-        DefaultCanvas = 'TGDIPlusCanvas'
-        PrintMargins = (
-          28
-          15
-          28
-          15)
-        ColorPaletteIndex = 13
-        object Series1: THorizBarSeries
-          BarBrush.Gradient.Direction = gdLeftRight
-          ColorEachPoint = True
-          ConePercent = 15
-          Transparency = 47
-          XLabelsSource = 'Localidade'
-          BarStyle = bsCone
-          Dark3D = False
-          Gradient.Direction = gdLeftRight
-          GradientRelative = True
-          MultiBar = mbSideAll
-          Sides = 3
-          XValues.Name = 'Bar'
-          XValues.Order = loNone
-          XValues.ValueSource = 'Frequencia'
-          YValues.Name = 'Y'
-          YValues.Order = loAscending
-        end
       end
     end
   end
